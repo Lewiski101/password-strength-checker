@@ -23,7 +23,7 @@ header {
     padding: 255px 0;
     text-align: center;
     color: white;
-    background-image: url(Passww.png);
+    background-image: url(Password.png);
     background-size: cover; /* Ensures the image covers the entire page */
     background-position: center; /* Centers the image on the page */
     background-attachment: fixed; 
