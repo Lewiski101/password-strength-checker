@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Checker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.png" type="image/png">
+        <meta name="description" content="Evaluate your password’s strength based on length, complexity, and character variety. Get feedback on its security to ensure it's strong and safe.">
+        <meta property="og:title" content="Password Strength Checker">
+        <meta property="og:description" content="Evaluate your password’s strength based on length, complexity, and character variety.">
+        <meta property="og:image" content="logo.png">
+        <meta property="og:url" content="https://myawesomewebsite.com">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Password Strength Checker">
+        <meta name="twitter:description" content="Evaluate your password’s strength based on length, complexity, and character variety.">
+        <meta name="twitter:image" content="logo.png">   
+
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Password Strength Checker</h1>
+            <p>Check your password strength and learn about cybersecurity.</p>
+        </div>
+    </section>
+
+    <!-- Password Checker Section -->
+    <section class="password-container">
+        <h2>Enter Your Password:</h2>
+        <div class="password-input-container">
+            <input type="password" id="password" placeholder="Enter Password" oninput="checkPasswordStrength()">
+            <span class="eye-icon" onclick="togglePasswordVisibility()">👁️</span>
+        </div>
+
+        <!-- Strength Indicator -->
+        <div class="strength-indicator">
+            <input type="range" id="strengthSlider" min="0" max="100" value="0" disabled>
+            <div id="strengthMeter" class="strength-bar"></div>
+            <div id="strengthText">Weak Password</div>
+        </div>
+
+        <!-- Criteria Checklist -->
+        <div id="criteriaChecklist">
+            <h3>Password Criteria:</h3>
+            <ul>
+                <li><input type="checkbox" id="lowercase" disabled><span>Lowercase letters</span></li>
+                <li><input type="checkbox" id="uppercase" disabled><span>Uppercase letters</span></li>
+                <li><input type="checkbox" id="numbers" disabled><span>Numbers</span></li>
+                <li><input type="checkbox" id="specialChars" disabled><span>Special characters</span></li>
+            </ul>
+        </div>
+
+        <div id="celebration">🎉 Congratulations! Your password is strong!</div>
+    </section>
+    <div class="container">
+        <div class="column" style="color:white;background:green;">
+            <h2>Why Strong Passwords Matter</h2>
+            <p>Weak passwords are a leading cause of data breaches. A strong password protects your online accounts from hackers and ensures your sensitive data remains safe.</p>
+            <p>Examples of consequences of weak passwords include identity theft, financial losses, and unauthorized account access.</p>
+        </div>
+        <div class="column" style="background-color:rgb(0, 119, 255);color:white;">
+            <h2>What Makes a Password Strong</h2>
+            <p>A strong password contains a mix of uppercase and lowercase letters, numbers, and symbols. It is at least 12 characters long and does not include easily guessable information.</p>
+            <p>For example, "MyP@ssw0rd2024!" is stronger than "password123".</p>
+        </div>
+        <div class="column" style="color:white;background:red;">
+            <h2>Common Password Mistakes to Avoid</h2>
+            <p>Reusing passwords, using personal information, and relying on short or simple passwords are common mistakes.</p>
+            <p>Using a password manager can help you create and store unique, strong passwords for each account.</p>
+        </div>
+    </div>
+
+    <section class="last">
+        <h2 style="text-align: center;">The Most Common Poor Password Practices</h2>
+        <p>Many users make critical mistakes when creating and managing passwords. For instance, they often reuse the same password across multiple sites. While convenient, this practice increases the risk of all accounts being compromised if one is breached.</p>
+        <p>Another common mistake is choosing passwords based on personal information, such as birthdays, names, or favorite sports teams. Hackers can easily guess such passwords using social engineering tactics or publicly available information.</p>
+        <p>Finally, failing to update passwords regularly leaves accounts vulnerable, especially if the original password has been exposed in a data breach. Adopting habits like using a password manager and enabling multi-factor authentication can significantly enhance security.</p>
+    </section>
+    <!-- Footer Section -->
+   
+    <footer>
+        <a href="index.html">Home</a>|
+        <a href="terms.html">Terms of Service</a> |
+        <a href="privacy.html">Privacy Policy</a> |
+        <a href="about-me.html">About Me</a>
+       <i><p class="lewi">Created By </i><b>Lewiski</b><a href="https://www.instagram.com/itslewiski/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.youtube.com/@Itslewiski"><i class="fa-brands fa-youtube"></i></a></p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/3bcca37ec7.js" crossorigin="anonymous"></script>
+</body>
+</html>
