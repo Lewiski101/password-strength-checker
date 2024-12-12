@@ -12,14 +12,14 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: black;
     padding: 10px;
     text-align: center;
     display: none; /* Remove the nav bar */
 }
 
 .hero {
-    background-color: #007BFF;
+    background-color: black;
     padding: 255px 0;
     text-align: center;
     color: white;
