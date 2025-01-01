@@ -1,6 +1,5 @@
 # Password Strength Checker
 
-A simple and effective password strength checker tool designed to help users create secure passwords by analyzing their strength in real time. It provides feedback on the complexity of passwords based on common security standards.
 
 ## Features
 
